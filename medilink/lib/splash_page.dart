@@ -13,7 +13,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState(){
     super.initState();
-    Timer(Duration(milliseconds: 2500),
+    Timer(const Duration(milliseconds: 3000),
             ()=>Navigator.of(context).pushReplacementNamed('main'));
   }
 
@@ -22,13 +22,13 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
         body:Center(
             child:Column(
-                children: [
-                  SizedBox(
-                    height:280,
+                children: <Widget>[
+                  const SizedBox(
+                    height:230,
                   ),
-                  Container(
-                      height:200,
-                      width:200,
+                  SizedBox(
+                      height:300,
+                      width:300,
                       child:Image.asset('images/MediLink.png')
                   ),
 

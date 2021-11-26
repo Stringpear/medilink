@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:medilink/primary.dart';
-class AlarmPage extends StatefulWidget {
-  const AlarmPage({Key? key}) : super(key: key);
+
+class CarePage extends StatefulWidget {
+  const CarePage({Key? key}) : super(key: key);
 
   @override
-  _AlarmPageState createState() => _AlarmPageState();
+  _CarePageState createState() => _CarePageState();
 }
 
-class _AlarmPageState extends State<AlarmPage> {
+class _CarePageState extends State<CarePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
 
         appBar:AppBar(
-          title:Text('알림',style:TextStyle(color: Colors.black,fontFamily: customfonts.fonts_SemiBold)),
+          title:Text('건강케어',style:TextStyle(color: Colors.black,fontFamily: customfonts.fonts_SemiBold)),
           automaticallyImplyLeading: false,
           backgroundColor: Colors.white,
           elevation: 0,

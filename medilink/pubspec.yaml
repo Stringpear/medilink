@@ -31,6 +31,15 @@ dependencies:
     sdk: flutter
 
 
+
+  flutter_svg_provider:
+  flutter_svg:
+
+
+
+
+
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -58,6 +67,38 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+
+  fonts:
+    - family: Pretendard-Black
+      fonts:
+        - asset: fonts/Pretendard-Black.ttf
+    - family: Pretendard-Bold
+      fonts:
+        - asset: fonts/Pretendard-Bold.ttf
+    - family: Pretendard-ExtraBold
+      fonts:
+        - asset: fonts/Pretendard-ExtraBold.ttf
+    - family: Pretendard-ExtraLight
+      fonts:
+        - asset: fonts/Pretendard-ExtraLight.ttf
+    - family: Pretendard-Light
+      fonts:
+        - asset: fonts/Pretendard-Light.ttf
+    - family: Pretendard-Medium
+      fonts:
+        - asset: fonts/Pretendard-Medium.ttf
+    - family: Pretendard-Regular
+      fonts:
+        - asset: fonts/Pretendard-Regular.ttf
+    - family: Pretendard-SemiBold
+      fonts:
+        - asset: fonts/Pretendard-SemiBold.ttf
+    - family: Pretendard-Thin
+      fonts:
+        - asset: fonts/Pretendard-Thin.ttf
+    - family: CustomIcons
+      fonts:
+        - asset: fonts/CustomIcons.ttf
 
 
   # To add assets to your application, add an assets section, like this:
