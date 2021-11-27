@@ -40,7 +40,7 @@ class _DiagnosisPageState extends State<DiagnosisPage> {
                         width:340,
                         child:Align( alignment: Alignment.topLeft,
                             child: Text("집에서도 간단하게,\n의사선생님을 만나보세요.",
-                                style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_Regular )))
+                                style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_SemiBold )))
                     ),
 
                     SizedBox(

@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
                 width:340,
                 child:Align( alignment: Alignment.topLeft,
                     child: Text("홍길동님,\n무엇이 필요하신가요?",
-                        style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_Regular )))
+                        style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_SemiBold )))
             ),
 
               SizedBox(
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                   width:340,
                   child:Align( alignment: Alignment.topLeft,
                       child: Text("생활 건강 정보",
-                          style:TextStyle( fontSize: 20,fontFamily: customfonts.fonts_Regular)))
+                          style:TextStyle( fontSize: 20,fontFamily: customfonts.fonts_SemiBold)))
               ),
               SizedBox(
                   height:10

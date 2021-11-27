@@ -39,7 +39,7 @@ class _CarePageState extends State<CarePage> {
                         width:340,
                         child:Align( alignment: Alignment.topLeft,
                             child: Text("케어 코디네이터의\n전문적인 관리를 받아보세요.",
-                                style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_Regular )))
+                                style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_SemiBold )))
                     ),
 
                     SizedBox(

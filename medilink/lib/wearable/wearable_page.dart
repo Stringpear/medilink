@@ -38,7 +38,7 @@ class _WearablePageState extends State<WearablePage> {
                         width:340,
                         child:Align( alignment: Alignment.topLeft,
                             child: Text("본인의 건강 지표를\n꾸준히 체크해보세요.",
-                                style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_Regular )))
+                                style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_SemiBold )))
                     ),
 
                     SizedBox(
@@ -60,7 +60,7 @@ class _WearablePageState extends State<WearablePage> {
                         width:340,
                         child:Align( alignment: Alignment.topLeft,
                             child: Text("웨어러블 디바이스 ",
-                                style:TextStyle( fontSize: 20,fontFamily: customfonts.fonts_Regular)))
+                                style:TextStyle( fontSize: 20,fontFamily: customfonts.fonts_SemiBold)))
                     ),
                     SizedBox(
                         height:10
