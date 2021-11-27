@@ -34,7 +34,8 @@ dependencies:
 
   flutter_svg_provider:
   flutter_svg:
-
+  flutter_swiper:
+  url_launcher:
 
 
 

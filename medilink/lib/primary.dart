@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
+//0xFFE59619
+//0xFF7389C2
 const color1 = Color(0xFF1FA3C6);
-const color2 =Color(0xFFE59619);
+const color2 =Color(0xFF7389C2);
 const color3 =Color(0xFF64A0B2);
 
 class customfonts{
