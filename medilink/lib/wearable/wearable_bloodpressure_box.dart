@@ -3,6 +3,7 @@ import 'package:medilink/custom_icons.dart';
 import 'package:medilink/diagnosis/diagnosis_page.dart';
 import 'package:medilink/main_page.dart';
 import 'package:medilink/primary.dart';
+import 'package:medilink/wearable/wearable_bloodpressure_page.dart';
 
 
 class WearableBloodPressureBox extends StatefulWidget {
@@ -35,13 +36,20 @@ class _WearableBloodPressureBoxState extends State<WearableBloodPressureBox> {
 
       ),
       child:GestureDetector(
-        onTap:(){},
+          onTap:()=>Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => WearableBloodPressurePage())),
         child:Row(
         children: [
-          Icon(CustomIcons.doctor,
-              size:60,
-              color:Colors.black),
-        SizedBox(width:30),
+          Container(width:70,
+          child:Center(
+            child:Icon(CustomIcons.bloodpressure,
+                size:60,
+                color:Colors.black),
+          )),
+
+
+        SizedBox(width:20),
         Container(
           height:80,
           width:220,
@@ -52,7 +60,7 @@ class _WearableBloodPressureBoxState extends State<WearableBloodPressureBox> {
                   style:TextStyle(fontSize: 24,color:Colors.black))),
               SizedBox(height:5),
               Align( alignment: Alignment.topLeft,
-                  child: Text('가장 최근 : 120/80 mmHg \n일주일 평균 : 120/80 mmHg',
+                  child: Text('가장 최근 : 138/92 mmHg \n일주일 평균 : 141/91 mmHg',
                   style:TextStyle(color:Colors.black),))
             ],
           ),

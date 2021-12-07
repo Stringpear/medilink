@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:medilink/care/care_book_page.dart';
 import 'package:medilink/custom_icons.dart';
-import 'package:medilink/diagnosis/diagnosis_page.dart';
-import 'package:medilink/main_page.dart';
 import 'package:medilink/primary.dart';
 
 
@@ -37,7 +36,9 @@ class _CareBookBoxState extends State<CareBookBox> {
           color:color2
       ),
       child:GestureDetector(
-        onTap:(){},
+          onTap:()=>Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => CareBookPage())),
         child:Row(
         children: [
           Icon(CustomIcons.care,
@@ -50,11 +51,11 @@ class _CareBookBoxState extends State<CareBookBox> {
           child:Column(
             children: [
               Align( alignment: Alignment.topLeft,
-                  child: Text('케어상담 예약하기',
+                  child: Text('케어 상담 일정관리',
                   style:TextStyle(fontSize: 24,color:Colors.white))),
               SizedBox(height:5),
               Align( alignment: Alignment.topLeft,
-                  child: Text('변현배님의 마지막 케어상담은 \n2021.11.27일 입니다.',
+                  child: Text('케어상담 일정을 확인하고 \n예약, 변경할 수 있어요.',
                   style:TextStyle(color:Colors.white),))
             ],
           ),

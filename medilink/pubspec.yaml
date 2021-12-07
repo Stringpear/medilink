@@ -37,7 +37,10 @@ dependencies:
   flutter_swiper:
   url_launcher:
   mysql1:
-
+  intl:
+  fl_chart:
+  syncfusion_flutter_calendar:
+  table_calendar:
 
 
 
@@ -100,6 +103,9 @@ flutter:
     - family: CustomIcons
       fonts:
         - asset: fonts/CustomIcons.ttf
+    - family: CustomIcons2
+      fonts:
+         - asset: fonts/CustomIcons2.ttf
 
 
   # To add assets to your application, add an assets section, like this:

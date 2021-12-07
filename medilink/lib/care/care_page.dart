@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medilink/care/care_book_box.dart';
-import 'package:medilink/care/care_book_check_box.dart';
 import 'package:medilink/care/care_messsage_box.dart';
-import 'package:medilink/care/care_prescription_box.dart';
 import 'package:medilink/care/care_record_box.dart';
 import 'package:medilink/care/care_zoom_box.dart';
 import 'package:medilink/primary.dart';
@@ -15,6 +13,7 @@ class CarePage extends StatefulWidget {
 }
 
 class _CarePageState extends State<CarePage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +24,7 @@ class _CarePageState extends State<CarePage> {
           backgroundColor: Colors.white,
           elevation: 0,
           centerTitle: true,
+
 
         ),
         body:Center(
@@ -56,25 +56,22 @@ class _CarePageState extends State<CarePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        CareRecordBox(),
-                        SizedBox(width:10),
-                        CareBookCheckBox()
+                        CareRecordBox()
                       ],
                     ),
 
                     SizedBox(
-                        height:10
+                        height:20
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        DiagnosisPriscriptionBox(),
-                        SizedBox(width:10),
+
                         CareMessageBox()
                       ],
                     ),
                     SizedBox(
-                        height:20
+                        height:133
                     ),
 
                   ],

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medilink/components.dart';
-import 'package:medilink/diagnosis/diagnolsis_book_check_box.dart';
 import 'package:medilink/diagnosis/diagnolsis_messsage_box.dart';
 import 'package:medilink/diagnosis/diagnolsis_prescription_box.dart';
-import 'package:medilink/diagnosis/diagnolsis_zoom_box.dart';
 import 'package:medilink/primary.dart';
 import 'package:medilink/diagnosis/diagnolsis_book_box.dart';
 import 'package:medilink/diagnosis/diagnolsis_record_box.dart';
@@ -39,7 +37,7 @@ class _DiagnosisPageState extends State<DiagnosisPage> {
                     Container(
                         width:340,
                         child:Align( alignment: Alignment.topLeft,
-                            child: Text("집에서도 간단하게,\n의사선생님을 만나보세요.",
+                            child: Text("주치의를 통해\n정기적인 진료를 받아보세요.",
                                 style:TextStyle( fontSize: 20,fontFamily:customfonts.fonts_SemiBold )))
                     ),
 
@@ -50,33 +48,15 @@ class _DiagnosisPageState extends State<DiagnosisPage> {
                     SizedBox(
                         height:20
                     ),
-                    DiagnosisZoomBox(),
-                    SizedBox(
-                        height:20
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        DiagnosisRecordBox(),
-                        SizedBox(width:10),
-                        DiagnosisBookCheckBox()
-                        ],
-                    ),
+                    DiagnosisPriscriptionBox(),
 
-                    SizedBox(
-                        height:10
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        DiagnosisPriscriptionBox(),
-                        SizedBox(width:10),
-                        DiagnosisMessageBox()
-                      ],
-                    ),
-                    SizedBox(
-                        height:20
-                    ),
+                        SizedBox(height:20),
+                    DiagnosisRecordBox(),
+                        SizedBox(height:20),
+                        DiagnosisMessageBox(),
+                    SizedBox(height: 133,)
+
+
 
                   ],
                 )

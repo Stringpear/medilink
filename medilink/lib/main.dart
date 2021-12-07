@@ -9,23 +9,17 @@ import 'package:medilink/alarm_page.dart';
 import 'package:medilink/home/home_page.dart';
 import 'package:flutter/services.dart';
 
-import 'package:mysql1/mysql1.dart';
+import 'database.dart';
 
-Future main() async {
-  // Open a connection (testdb should already exist)
-  final conn = await MySqlConnection.connect(ConnectionSettings(
-      host: 'medilink-db.cojo9su1ztfx.us-east-2.rds.amazonaws.com',
-      port: 3306,
-      user: 'master',
-      db: 'medilinkDB',
-      password: '960620Hb!'));
-
+void main(){
   // Create a table
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       statusBarColor:Colors.white // 원하는 색
   ));
   runApp(const MyApp());
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({key}) : super(key: key);
@@ -34,6 +28,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
         theme: ThemeData(
           fontFamily: 'Pretendard-Regular',

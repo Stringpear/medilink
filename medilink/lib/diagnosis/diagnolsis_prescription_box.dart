@@ -4,6 +4,9 @@ import 'package:medilink/diagnosis/diagnosis_page.dart';
 import 'package:medilink/main_page.dart';
 import 'package:medilink/primary.dart';
 
+import '../custom_icons2.dart';
+import 'diagnosis_prescription_page.dart';
+
 
 class DiagnosisPriscriptionBox extends StatefulWidget {
   const DiagnosisPriscriptionBox({Key? key}) : super(key: key);
@@ -22,33 +25,43 @@ class _DiagnosisPriscriptionBoxState extends State<DiagnosisPriscriptionBox> {
     return Container(
         padding: EdgeInsets.all(10),
         height:100,
-        width:160,
+        width:340,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           border:Border.all(color:color1, width:5),
 
         ),
         child:GestureDetector(
-          onTap:(){},
-          child:
-          Container(
-            height:80,
-            width:220,
-            child:Column(
+            onTap:()=>Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DiagonosisPrescriptionPage())),
+            child:Row(
               children: [
-                Text('처방전 조회' ,
-                    style:TextStyle(fontSize: 24,color:Colors.black)),
-                SizedBox(height:5),
-                Text('  원격진료\n처방전 확인',
-                  style:TextStyle(color:Colors.black),)
+                SizedBox(width:15),
+                Icon(CustomIcons2.pill,
+                    size:50,
+                    color:Colors.black),
+                SizedBox(width:25),
+                Container(
+                  height:80,
+                  width:220,
+                  child:Column(
+                    children: [
+                      Align( alignment: Alignment.topLeft,
+                          child: Text('처방전 조회',
+                              style:TextStyle(fontSize: 24,color:Colors.black))),
+                      SizedBox(height:5),
+                      Align( alignment: Alignment.topLeft,
+                          child: Text('담당 주치의의\n처방전을 확인하실 수 있어요.',
+                            style:TextStyle(color:Colors.black),))
+                    ],
+                  ),
+                ),
               ],
-            ),
-          )
-          ,
+            )
+
         )
 
     );
-
-
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medilink/custom_icons.dart';
+import 'package:medilink/diagnosis/diagnosis_book_page.dart';
 import 'package:medilink/diagnosis/diagnosis_page.dart';
 import 'package:medilink/main_page.dart';
 import 'package:medilink/primary.dart';
@@ -35,7 +36,9 @@ class _DiagnosisBookBoxState extends State<DiagnosisBookBox> {
           color:color1
       ),
       child:GestureDetector(
-        onTap:(){},
+          onTap:()=>Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DiagnosisBookPage())),
         child:Row(
         children: [
           Icon(CustomIcons.doctor,
@@ -48,11 +51,11 @@ class _DiagnosisBookBoxState extends State<DiagnosisBookBox> {
           child:Column(
             children: [
               Align( alignment: Alignment.topLeft,
-                  child: Text('원격진료 예약하기',
+                  child: Text('정기 진료 일정관리',
                   style:TextStyle(fontSize: 24,color:Colors.white))),
               SizedBox(height:5),
               Align( alignment: Alignment.topLeft,
-                  child: Text('변현배님의 마지막 진료는 \n2021.11.27일 입니다.',
+                  child: Text('정기진료 일정을 확인하고 \n예약, 변경할 수 있어요.',
                   style:TextStyle(color:Colors.white),))
             ],
           ),

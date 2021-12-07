@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:medilink/components.dart';
-import 'package:medilink/home/home_swiper.dart';
 import 'package:medilink/primary.dart';
 import 'package:medilink/wearable/Wearable_update_box.dart';
 import 'package:medilink/wearable/wearable_bloodpressure_box.dart';
 import 'package:medilink/wearable/wearable_bloodsugar_box.dart';
+import 'package:medilink/wearable/wearable_swiper.dart';
 
 class WearablePage extends StatefulWidget {
   const WearablePage({Key? key}) : super(key: key);
@@ -66,7 +65,7 @@ class _WearablePageState extends State<WearablePage> {
                         height:10
                     ),
                     Container(
-                        child: HomeSwiper(),
+                        child: WearableSwiper(),
                         height:200,
                         width:340
                     ),

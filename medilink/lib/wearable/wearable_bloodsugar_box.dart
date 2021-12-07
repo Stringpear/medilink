@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:medilink/custom_icons.dart';
+import 'package:medilink/custom_icons2.dart';
 import 'package:medilink/diagnosis/diagnosis_page.dart';
 import 'package:medilink/main_page.dart';
 import 'package:medilink/primary.dart';
+import 'package:medilink/wearable/wearable_bloodsugar_page.dart';
 
 
 class WearableBloodSugarBox extends StatefulWidget {
@@ -31,17 +32,21 @@ class _WearableBloodSugarBoxState extends State<WearableBloodSugarBox> {
       width:340,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          border:Border.all(color:color2, width:5),
+          border:Border.all(color:color3, width:5),
 
       ),
       child:GestureDetector(
-        onTap:(){},
+        onTap:()=>Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => WearableBloodSugarPage())),
         child:Row(
-        children: [
-          Icon(CustomIcons.doctor,
-              size:60,
-              color:Colors.black),
-        SizedBox(width:30),
+        children: [Container(width:70,
+            child:Center(
+              child:Icon(CustomIcons2.blood_sugar,
+                  size:70,
+                  color:Colors.black),
+            )),
+        SizedBox(width:20),
         Container(
           height:80,
           width:220,
@@ -52,7 +57,7 @@ class _WearableBloodSugarBoxState extends State<WearableBloodSugarBox> {
                   style:TextStyle(fontSize: 24,color:Colors.black))),
               SizedBox(height:5),
               Align( alignment: Alignment.topLeft,
-                  child: Text('가장 최근 : 89mg/dl \n일주일 평균 : 92mg/dl',
+                  child: Text('가장 최근 : 140mg/dl \n일주일 평균 : 137mg/dl',
                   style:TextStyle(color:Colors.black),))
             ],
           ),
