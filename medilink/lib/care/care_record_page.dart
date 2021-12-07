@@ -12,7 +12,7 @@ class CareRecordPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar:AppBar(
-          title:Text('정기 진료 기록',style:TextStyle(color: Colors.black,fontFamily: customfonts.fonts_SemiBold)),
+          title:Text('케어 상담 기록',style:TextStyle(color: Colors.black,fontFamily: customfonts.fonts_SemiBold)),
           iconTheme: IconThemeData(color:Colors.black),
           backgroundColor: Colors.white,
           elevation: 0,
@@ -24,7 +24,7 @@ class CareRecordPage extends StatelessWidget {
               decoration: BoxDecoration(color:color2.withOpacity(0.1),borderRadius: BorderRadius.circular(20)),
               headingTextStyle: TextStyle(fontSize: 17,color: Colors.black,fontWeight: FontWeight.bold),
 
-              columns: [ DataColumn(label: Text('진료 날짜')),
+              columns: [ DataColumn(label: Text('상담 날짜')),
                 DataColumn(label: Text('코디'),),
                 DataColumn(label: Text('상담 내용',)),
               ],columnSpacing: 30,
