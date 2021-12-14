@@ -16,7 +16,7 @@ class DBController {
     var inputFormat = DateFormat('yyyy-MM-dd');
     var now = inputFormat.format(new DateTime.now());
     var results = await conn.query(
-        'select name from users where id = 1');
+        'select name from user where idUser = 1');
     conn.close();
     return results.toList();
   }
